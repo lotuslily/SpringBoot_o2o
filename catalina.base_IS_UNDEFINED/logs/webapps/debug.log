@@ -1,0 +1,179 @@
+2018-06-07 09:58:53.872 [main] DEBUG com.cincc.o2o.O2oApplication -Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-07 10:01:06.138 [http-nio-8080-exec-10] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==>  Preparing: SELECT l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_name = ? AND l.password = ? 
+2018-06-07 10:01:06.165 [http-nio-8080-exec-10] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==> Parameters: testusername(String), 50seqlsl95s52se55566sls5606ss599(String)
+2018-06-07 10:01:06.201 [http-nio-8080-exec-10] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -<==      Total: 1
+2018-06-07 10:01:37.581 [http-nio-8080-exec-8] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==>  Preparing: SELECT l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_name = ? AND l.password = ? 
+2018-06-07 10:01:37.581 [http-nio-8080-exec-8] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==> Parameters: testusername(String), 50seqlsl95s52se55566sls5606ss599(String)
+2018-06-07 10:01:37.583 [http-nio-8080-exec-8] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -<==      Total: 1
+2018-06-07 10:02:08.779 [http-nio-8080-exec-1] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==>  Preparing: SELECT l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_name = ? AND l.password = ? 
+2018-06-07 10:02:08.779 [http-nio-8080-exec-1] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==> Parameters: testusername(String), 50seqlsl95s52se55566sls5606ss599(String)
+2018-06-07 10:02:08.781 [http-nio-8080-exec-1] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -<==      Total: 1
+2018-06-07 10:03:52.096 [main] DEBUG com.cincc.o2o.O2oApplication -Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-07 10:04:09.560 [http-nio-8080-exec-5] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==>  Preparing: SELECT l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_name = ? AND l.password = ? 
+2018-06-07 10:04:09.577 [http-nio-8080-exec-5] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==> Parameters: testusername(String), 50seqlsl95s52se55566sls5606ss599(String)
+2018-06-07 10:04:09.590 [http-nio-8080-exec-5] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -<==      Total: 1
+2018-06-07 10:04:10.097 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2018-06-07 10:04:10.098 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==> Parameters: 3(Long), 0(Integer), 100(Integer)
+2018-06-07 10:04:10.116 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -<==      Total: 9
+2018-06-07 10:04:10.117 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2018-06-07 10:04:10.117 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==> Parameters: 3(Long)
+2018-06-07 10:04:10.120 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -<==      Total: 1
+2018-06-07 10:10:21.243 [main] DEBUG com.cincc.o2o.O2oApplication -Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-07 10:10:49.694 [http-nio-8080-exec-6] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==>  Preparing: SELECT l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_name = ? AND l.password = ? 
+2018-06-07 10:10:49.707 [http-nio-8080-exec-6] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==> Parameters: testusername(String), 50seqlsl95s52se55566sls5606ss599(String)
+2018-06-07 10:10:49.721 [http-nio-8080-exec-6] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -<==      Total: 1
+2018-06-07 10:10:50.258 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2018-06-07 10:10:50.260 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==> Parameters: 3(Long), 0(Integer), 100(Integer)
+2018-06-07 10:10:50.274 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -<==      Total: 9
+2018-06-07 10:10:50.278 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2018-06-07 10:10:50.279 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==> Parameters: 3(Long)
+2018-06-07 10:10:50.282 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -<==      Total: 1
+2018-06-07 10:11:14.000 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2018-06-07 10:11:14.001 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==> Parameters: 3(Long), 0(Integer), 100(Integer)
+2018-06-07 10:11:14.012 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -<==      Total: 9
+2018-06-07 10:11:14.013 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2018-06-07 10:11:14.013 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==> Parameters: 3(Long)
+2018-06-07 10:11:14.014 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -<==      Total: 1
+2018-06-07 10:11:18.908 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ShopDao.queryByShopId -==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id AND s.shop_id=? 
+2018-06-07 10:11:18.909 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ShopDao.queryByShopId -==> Parameters: 1(Long)
+2018-06-07 10:11:18.911 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ShopDao.queryByShopId -<==      Total: 1
+2018-06-07 10:11:22.096 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:11:22.097 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:11:22.104 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 7
+2018-06-07 10:11:22.105 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:11:22.105 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:11:22.107 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1
+2018-06-07 10:11:25.938 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ProductDao.updateProduct -==>  Preparing: UPDATE tb_product SET last_edit_time=?, enable_status=? WHERE product_id = ? AND shop_id=? 
+2018-06-07 10:11:25.939 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ProductDao.updateProduct -==> Parameters: 2018-06-07 10:11:25.935(Timestamp), 0(Integer), 8(Long), 1(Long)
+2018-06-07 10:11:25.957 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ProductDao.updateProduct -<==    Updates: 1
+2018-06-07 10:11:25.973 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:11:25.973 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:11:25.977 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 7
+2018-06-07 10:11:25.977 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:11:25.977 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:11:25.978 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1
+2018-06-07 10:11:29.099 [http-nio-8080-exec-10] DEBUG com.cincc.o2o.dao.ProductDao.updateProduct -==>  Preparing: UPDATE tb_product SET last_edit_time=?, enable_status=? WHERE product_id = ? AND shop_id=? 
+2018-06-07 10:11:29.099 [http-nio-8080-exec-10] DEBUG com.cincc.o2o.dao.ProductDao.updateProduct -==> Parameters: 2018-06-07 10:11:29.098(Timestamp), 0(Integer), 3(Long), 1(Long)
+2018-06-07 10:11:29.101 [http-nio-8080-exec-10] DEBUG com.cincc.o2o.dao.ProductDao.updateProduct -<==    Updates: 1
+2018-06-07 10:11:29.111 [http-nio-8080-exec-9] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:11:29.111 [http-nio-8080-exec-9] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:11:29.118 [http-nio-8080-exec-9] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 7
+2018-06-07 10:11:29.119 [http-nio-8080-exec-9] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:11:29.270 [http-nio-8080-exec-9] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:11:29.271 [http-nio-8080-exec-9] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1
+2018-06-07 10:32:54.446 [http-nio-8080-exec-5] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:32:54.447 [http-nio-8080-exec-5] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:32:54.451 [http-nio-8080-exec-5] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 7
+2018-06-07 10:32:54.455 [http-nio-8080-exec-5] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:32:54.457 [http-nio-8080-exec-5] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:32:54.460 [http-nio-8080-exec-5] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1
+2018-06-07 10:35:05.389 [main] DEBUG com.cincc.o2o.O2oApplication -Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-07 10:37:26.485 [http-nio-8080-exec-5] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==>  Preparing: SELECT l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_name = ? AND l.password = ? 
+2018-06-07 10:37:26.501 [http-nio-8080-exec-5] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==> Parameters: testusername(String), 50seqlsl95s52se55566sls5606ss599(String)
+2018-06-07 10:37:26.514 [http-nio-8080-exec-5] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -<==      Total: 1
+2018-06-07 10:37:27.006 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2018-06-07 10:37:27.007 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==> Parameters: 3(Long), 0(Integer), 100(Integer)
+2018-06-07 10:37:27.020 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -<==      Total: 9
+2018-06-07 10:37:27.021 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2018-06-07 10:37:27.022 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==> Parameters: 3(Long)
+2018-06-07 10:37:27.023 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -<==      Total: 1
+2018-06-07 10:37:37.842 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:37:37.842 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:37:37.849 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 7
+2018-06-07 10:37:37.850 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:37:37.850 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:37:37.851 [http-nio-8080-exec-1] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1
+2018-06-07 10:37:40.385 [http-nio-8080-exec-7] DEBUG c.c.o.d.P.queryProductCategoryList -==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2018-06-07 10:37:40.385 [http-nio-8080-exec-7] DEBUG c.c.o.d.P.queryProductCategoryList -==> Parameters: 1(Long)
+2018-06-07 10:37:40.389 [http-nio-8080-exec-7] DEBUG c.c.o.d.P.queryProductCategoryList -<==      Total: 3
+2018-06-07 10:38:38.356 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ProductDao.insertProduct -==>  Preparing: INSERT INTO tb_product(product_name,product_desc,img_addr, normal_price,promotion_price,priority,create_time, last_edit_time,enable_status,product_category_id, shop_id) VALUES (?,?,?, ?,?,?,?, ?,?,?, ?) 
+2018-06-07 10:38:38.358 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ProductDao.insertProduct -==> Parameters: 荷兰豆(String), 好吃的荷兰豆(String), \upload\item\shop1\2018060710383870592.jpg(String), 10(String), 6(String), 1999(Integer), 2018-06-07 10:38:38.167(Timestamp), 2018-06-07 10:38:38.167(Timestamp), 1(Integer), 1(Long), 1(Long)
+2018-06-07 10:38:38.361 [http-nio-8080-exec-8] DEBUG com.cincc.o2o.dao.ProductDao.insertProduct -<==    Updates: 1
+2018-06-07 10:38:38.511 [http-nio-8080-exec-8] DEBUG c.c.o2o.dao.ProductImgDao.batchInsertProductImg -==>  Preparing: INSERT INTO tb_product_img(img_addr,img_desc,priority, create_time,product_id) VALUES ( ?, ?, ?, ?, ? ) 
+2018-06-07 10:38:38.511 [http-nio-8080-exec-8] DEBUG c.c.o2o.dao.ProductImgDao.batchInsertProductImg -==> Parameters: \upload\item\shop1\2018060710383886527.jpg(String), null, null, 2018-06-07 10:38:38.507(Timestamp), 9(Long)
+2018-06-07 10:38:38.513 [http-nio-8080-exec-8] DEBUG c.c.o2o.dao.ProductImgDao.batchInsertProductImg -<==    Updates: 1
+2018-06-07 10:38:42.710 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:38:42.710 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:38:42.716 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 8
+2018-06-07 10:38:42.717 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:38:42.718 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:38:42.722 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1
+2018-06-07 10:38:59.200 [http-nio-8080-exec-6] DEBUG c.c.o.d.P.queryProductCategoryList -==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2018-06-07 10:38:59.201 [http-nio-8080-exec-6] DEBUG c.c.o.d.P.queryProductCategoryList -==> Parameters: 1(Long)
+2018-06-07 10:38:59.203 [http-nio-8080-exec-6] DEBUG c.c.o.d.P.queryProductCategoryList -<==      Total: 3
+2018-06-07 10:39:03.763 [http-nio-8080-exec-7] DEBUG c.c.o2o.dao.ProductDao.updateProductCategoryToNull -==>  Preparing: UPDATE tb_product SET product_category_id = null WHERE product_category_id = ? 
+2018-06-07 10:39:03.764 [http-nio-8080-exec-7] DEBUG c.c.o2o.dao.ProductDao.updateProductCategoryToNull -==> Parameters: 9(Long)
+2018-06-07 10:39:03.765 [http-nio-8080-exec-7] DEBUG c.c.o2o.dao.ProductDao.updateProductCategoryToNull -<==    Updates: 0
+2018-06-07 10:39:03.765 [http-nio-8080-exec-7] DEBUG c.c.o.dao.ProductCategoryDao.deleteProductCategory -==>  Preparing: DELETE FROM tb_product_category WHERE product_category_id=? AND shop_id=? 
+2018-06-07 10:39:03.766 [http-nio-8080-exec-7] DEBUG c.c.o.dao.ProductCategoryDao.deleteProductCategory -==> Parameters: 9(Long), 1(Long)
+2018-06-07 10:39:03.768 [http-nio-8080-exec-7] DEBUG c.c.o.dao.ProductCategoryDao.deleteProductCategory -<==    Updates: 1
+2018-06-07 10:39:03.781 [http-nio-8080-exec-10] DEBUG c.c.o.d.P.queryProductCategoryList -==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2018-06-07 10:39:03.782 [http-nio-8080-exec-10] DEBUG c.c.o.d.P.queryProductCategoryList -==> Parameters: 1(Long)
+2018-06-07 10:39:03.783 [http-nio-8080-exec-10] DEBUG c.c.o.d.P.queryProductCategoryList -<==      Total: 2
+2018-06-07 10:41:27.429 [http-nio-8080-exec-9] DEBUG c.c.o.d.P.queryProductCategoryList -==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2018-06-07 10:41:27.431 [http-nio-8080-exec-9] DEBUG c.c.o.d.P.queryProductCategoryList -==> Parameters: 1(Long)
+2018-06-07 10:41:27.431 [http-nio-8080-exec-9] DEBUG c.c.o.d.P.queryProductCategoryList -<==      Total: 2
+2018-06-07 10:42:41.254 [main] DEBUG com.cincc.o2o.O2oApplication -Running with Spring Boot v2.0.2.RELEASE, Spring v5.0.6.RELEASE
+2018-06-07 10:44:24.775 [http-nio-8080-exec-6] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==>  Preparing: SELECT l.local_auth_id, l.user_name, l.password, l.create_time, l.last_edit_time, p.user_id, p.name, p.gender, p.email, p.profile_img, p.user_type, p.create_time, p.last_edit_time, p.enable_status FROM tb_local_auth l LEFT JOIN tb_person_info p ON l.user_id = p.user_id WHERE l.user_name = ? AND l.password = ? 
+2018-06-07 10:44:24.794 [http-nio-8080-exec-6] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -==> Parameters: testusername(String), 50seqlsl95s52se55566sls5606ss599(String)
+2018-06-07 10:44:24.809 [http-nio-8080-exec-6] DEBUG c.c.o.dao.LocalAuthDao.queryLocalByUserNameAndPwd -<==      Total: 1
+2018-06-07 10:44:25.310 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==>  Preparing: SELECT s.shop_id, s.shop_name, s.shop_desc, s.shop_addr, s.phone, s.shop_img, s.priority, s.create_time, s.last_edit_time, s.enable_status, s.advice, a.area_id, a.area_name, sc.shop_category_id, sc.shop_category_name FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id ORDER BY s.priority DESC LIMIT ?,?; 
+2018-06-07 10:44:25.311 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -==> Parameters: 3(Long), 0(Integer), 100(Integer)
+2018-06-07 10:44:25.322 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ShopDao.queryShopList -<==      Total: 9
+2018-06-07 10:44:25.323 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==>  Preparing: SELECT count(1) FROM tb_shop s, tb_area a, tb_shop_category sc WHERE s.owner_id =? AND s.area_id=a.area_id AND s.shop_category_id = sc.shop_category_id 
+2018-06-07 10:44:25.324 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -==> Parameters: 3(Long)
+2018-06-07 10:44:25.326 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ShopDao.queryShopCount -<==      Total: 1
+2018-06-07 10:44:33.260 [http-nio-8080-exec-10] DEBUG c.c.o.d.P.queryProductCategoryList -==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2018-06-07 10:44:33.260 [http-nio-8080-exec-10] DEBUG c.c.o.d.P.queryProductCategoryList -==> Parameters: 1(Long)
+2018-06-07 10:44:33.264 [http-nio-8080-exec-10] DEBUG c.c.o.d.P.queryProductCategoryList -<==      Total: 2
+2018-06-07 10:45:32.964 [http-nio-8080-exec-3] DEBUG c.c.o.d.P.batchInsertProductCategory -==>  Preparing: INSERT INTO tb_product_category(product_category_name,priority,create_time,shop_id) VALUES ( ?, ?, ?, ? ) 
+2018-06-07 10:45:32.965 [http-nio-8080-exec-3] DEBUG c.c.o.d.P.batchInsertProductCategory -==> Parameters: 绿色食品(String), 123(Integer), null, 1(Long)
+2018-06-07 10:45:32.975 [http-nio-8080-exec-3] DEBUG c.c.o.d.P.batchInsertProductCategory -<==    Updates: 1
+2018-06-07 10:45:36.690 [http-nio-8080-exec-5] DEBUG c.c.o.d.P.queryProductCategoryList -==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2018-06-07 10:45:36.690 [http-nio-8080-exec-5] DEBUG c.c.o.d.P.queryProductCategoryList -==> Parameters: 1(Long)
+2018-06-07 10:45:36.692 [http-nio-8080-exec-5] DEBUG c.c.o.d.P.queryProductCategoryList -<==      Total: 3
+2018-06-07 10:45:45.345 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:45:45.345 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:45:45.354 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 8
+2018-06-07 10:45:45.356 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:45:45.357 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:45:45.358 [http-nio-8080-exec-3] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1
+2018-06-07 10:45:53.758 [http-nio-8080-exec-10] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id =pm.product_id WHERE p.product_id =? ORDER BY pm.priority DESC 
+2018-06-07 10:45:53.760 [http-nio-8080-exec-10] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -==> Parameters: 9(Long)
+2018-06-07 10:45:53.766 [http-nio-8080-exec-10] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -<==      Total: 1
+2018-06-07 10:45:53.767 [http-nio-8080-exec-10] DEBUG c.c.o.d.P.queryProductCategoryList -==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2018-06-07 10:45:53.767 [http-nio-8080-exec-10] DEBUG c.c.o.d.P.queryProductCategoryList -==> Parameters: 1(Long)
+2018-06-07 10:45:53.771 [http-nio-8080-exec-10] DEBUG c.c.o.d.P.queryProductCategoryList -<==      Total: 3
+2018-06-07 10:46:11.407 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.updateProduct -==>  Preparing: UPDATE tb_product SET product_name=?, product_desc=?, normal_price=?, promotion_price=?, priority=?, last_edit_time=?, product_category_id=? WHERE product_id = ? AND shop_id=? 
+2018-06-07 10:46:11.408 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.updateProduct -==> Parameters: 荷兰豆(String), 好吃的荷兰豆，开心(String), 10(String), 6(String), 1999(Integer), 2018-06-07 10:46:11.405(Timestamp), 1(Long), 9(Long), 1(Long)
+2018-06-07 10:46:11.416 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.updateProduct -<==    Updates: 1
+2018-06-07 10:46:14.592 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:46:14.592 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:46:14.599 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 8
+2018-06-07 10:46:14.600 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:46:14.600 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:46:14.601 [http-nio-8080-exec-7] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1
+2018-06-07 10:46:18.988 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id =pm.product_id WHERE p.product_id =? ORDER BY pm.priority DESC 
+2018-06-07 10:46:18.989 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -==> Parameters: 9(Long)
+2018-06-07 10:46:18.993 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -<==      Total: 1
+2018-06-07 10:46:34.593 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id =pm.product_id WHERE p.product_id =? ORDER BY pm.priority DESC 
+2018-06-07 10:46:34.595 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -==> Parameters: 9(Long)
+2018-06-07 10:46:34.596 [http-nio-8080-exec-2] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -<==      Total: 1
+2018-06-07 10:46:40.268 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:46:40.269 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:46:40.274 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 8
+2018-06-07 10:46:40.275 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:46:40.276 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:46:40.276 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1
+2018-06-07 10:46:44.510 [http-nio-8080-exec-9] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -==>  Preparing: SELECT p.product_id, p.product_name, p.product_desc, p.img_addr, p.normal_price, p.promotion_price, p.priority, p.create_time, p.last_edit_time, p.enable_status, p.product_category_id, p.shop_id, pm.product_img_id, pm.img_addr AS detail_img, pm.img_desc, pm.priority, pm.create_time FROM tb_product p LEFT JOIN tb_product_img pm ON p.product_id =pm.product_id WHERE p.product_id =? ORDER BY pm.priority DESC 
+2018-06-07 10:46:44.510 [http-nio-8080-exec-9] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -==> Parameters: 9(Long)
+2018-06-07 10:46:44.513 [http-nio-8080-exec-9] DEBUG com.cincc.o2o.dao.ProductDao.queryProductById -<==      Total: 1
+2018-06-07 10:46:44.514 [http-nio-8080-exec-9] DEBUG c.c.o.d.P.queryProductCategoryList -==>  Preparing: SELECT product_category_id, product_category_name, priority, create_time, shop_id FROM tb_product_category WHERE shop_id = ? ORDER BY priority DESC 
+2018-06-07 10:46:44.514 [http-nio-8080-exec-9] DEBUG c.c.o.d.P.queryProductCategoryList -==> Parameters: 1(Long)
+2018-06-07 10:46:44.515 [http-nio-8080-exec-9] DEBUG c.c.o.d.P.queryProductCategoryList -<==      Total: 3
+2018-06-07 10:46:48.787 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==>  Preparing: SELECT product_id, product_name, product_desc, img_addr, normal_price, promotion_price, priority, create_time, last_edit_time, enable_status, product_category_id, shop_id FROM tb_product WHERE shop_id = ? ORDER BY priority DESC LIMIT ?,?; 
+2018-06-07 10:46:48.788 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -==> Parameters: 1(Long), 0(Integer), 9999(Integer)
+2018-06-07 10:46:48.791 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductList -<==      Total: 8
+2018-06-07 10:46:48.791 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==>  Preparing: SELECT count(1) FROM tb_product WHERE shop_id = ? 
+2018-06-07 10:46:48.792 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -==> Parameters: 1(Long)
+2018-06-07 10:46:48.793 [http-nio-8080-exec-6] DEBUG com.cincc.o2o.dao.ProductDao.queryProductCount -<==      Total: 1

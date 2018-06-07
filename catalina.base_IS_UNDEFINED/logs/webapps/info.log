@@ -1,0 +1,15 @@
+2018-06-07 09:58:53.863 [main] INFO  com.cincc.o2o.O2oApplication -Starting O2oApplication on LAPTOP-40AIRDQT with PID 9720 (D:\cincc_bigdata\springboot_o2o\o2o\target\classes started by lotus in D:\cincc_bigdata\springboot_o2o\o2o)
+2018-06-07 09:58:53.880 [main] INFO  com.cincc.o2o.O2oApplication -No active profile set, falling back to default profiles: default
+2018-06-07 09:58:59.240 [main] INFO  com.cincc.o2o.O2oApplication -Started O2oApplication in 5.898 seconds (JVM running for 7.651)
+2018-06-07 10:03:52.091 [main] INFO  com.cincc.o2o.O2oApplication -Starting O2oApplication on LAPTOP-40AIRDQT with PID 14696 (D:\cincc_bigdata\springboot_o2o\o2o\target\classes started by lotus in D:\cincc_bigdata\springboot_o2o\o2o)
+2018-06-07 10:03:52.098 [main] INFO  com.cincc.o2o.O2oApplication -No active profile set, falling back to default profiles: default
+2018-06-07 10:03:56.129 [main] INFO  com.cincc.o2o.O2oApplication -Started O2oApplication in 4.394 seconds (JVM running for 5.434)
+2018-06-07 10:10:21.217 [main] INFO  com.cincc.o2o.O2oApplication -Starting O2oApplication on LAPTOP-40AIRDQT with PID 6664 (D:\cincc_bigdata\springboot_o2o\o2o\target\classes started by lotus in D:\cincc_bigdata\springboot_o2o\o2o)
+2018-06-07 10:10:21.245 [main] INFO  com.cincc.o2o.O2oApplication -No active profile set, falling back to default profiles: default
+2018-06-07 10:10:25.077 [main] INFO  com.cincc.o2o.O2oApplication -Started O2oApplication in 4.239 seconds (JVM running for 5.342)
+2018-06-07 10:35:05.386 [main] INFO  com.cincc.o2o.O2oApplication -Starting O2oApplication on LAPTOP-40AIRDQT with PID 18700 (D:\cincc_bigdata\springboot_o2o\o2o\target\classes started by lotus in D:\cincc_bigdata\springboot_o2o\o2o)
+2018-06-07 10:35:05.400 [main] INFO  com.cincc.o2o.O2oApplication -No active profile set, falling back to default profiles: default
+2018-06-07 10:35:09.314 [main] INFO  com.cincc.o2o.O2oApplication -Started O2oApplication in 4.264 seconds (JVM running for 5.226)
+2018-06-07 10:42:41.251 [main] INFO  com.cincc.o2o.O2oApplication -Starting O2oApplication on LAPTOP-40AIRDQT with PID 18464 (D:\cincc_bigdata\springboot_o2o\o2o\target\classes started by lotus in D:\cincc_bigdata\springboot_o2o\o2o)
+2018-06-07 10:42:41.255 [main] INFO  com.cincc.o2o.O2oApplication -No active profile set, falling back to default profiles: default
+2018-06-07 10:42:45.646 [main] INFO  com.cincc.o2o.O2oApplication -Started O2oApplication in 4.675 seconds (JVM running for 6.637)
